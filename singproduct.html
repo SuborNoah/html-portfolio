@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TESCOM</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+
+  <section id="header">
+    <a href="#"><img src="IMAGES/xsed.jfif" class="logo" height="70px" alt="Tescom logo"></a>
+
+    <div> 
+      <ul id="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="inventories.html">Inventories</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+ 
+  </section>
+
+  <section id="prodetails" class="section-p1">
+    <div class="single-pro-image">
+        <img src="IMAGES/products/hp cpu.jpg" width="100%" id="mainIMG" alt="HP CPU">
+
+        <div class="small-img-group">
+            <div class="small-img-col">
+                <img src="IMAGES/products/small images/cpu 1.jpg" width="100%" height="100%" class="small-img" alt="hp cpu back">
+            </div>
+
+            <div class="small-img-col">
+                <img src="IMAGES/products/small images/cpu 2.jpg" width="100%" height="100%" class="small-img" alt="hp cpu back">
+            </div>
+
+            <div class="small-img-col">
+                <img src="IMAGES/products/small images/cpu 3.jpg" width="100%" class="small-img" alt="hp cpu back">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="single-pro-details">
+        <h6>Home/HP</h6>
+        <h4>HP CPU Processor</h4>
+        <button class="normal">Contact Us</button>
+        <h4>Product Details</h4>
+        <span>Experience fast performance with this CPU, designed to handle demanding tasks with ease. 
+            This processor delivers exceptional multitasking capabilities with supports energy efficiency and advanced cooling solutions to keep the system running. For any questions, troubleshooting, help with installations, Please contact us.
+        </span>
+
+    </div>
+  </section>
+
+  <section id="product1" class="section-p1">
+    <h2>Featured Supplies</h2>
+    <p>Collection Office Equipments</p>
+    <div class="pro-container">
+      <div class="pro">
+        <img src="IMAGES/products/hp cpu.jpg" alt="HP CPU">
+        <div class="Description">
+          <span>Hewlett-Packard(Hp)</span>
+          <h5>CPU</h5>
+          <div class="star">
+            <i class="fa fa-star"></i>
+          </div>
+          <h4>&#x2709 contact us</h4>
+        </div>
+        <a href="#"><i class="fa fa-shopping-cart"></i></a>
+      </div>
+
+      <div class="pro">
+        <img src="IMAGES/products/catridge.jpg" alt="Toner">
+        <div class="Description">
+          <span>Hp (Cartridge)</span>
+          <h5>Toner Cartridge A05</h5>
+          <div class="star">
+            <i class="fa fa-star"></i>
+          </div>
+          <h4>Request now</h4>
+        </div>
+        <a href="#"><i class="fa fa-shopping-cart"></i></a>
+      </div>
+
+      <div class="pro">
+        <img src="IMAGES/products/printer.jpg" height="225" alt="Hp Printer">
+        <div class="Description">
+          <span>Hewlett-Packard(Hp)</span>
+          <h5>Hp Printer 5</h5>
+          <div class="star">
+            <i class="fa fa-star"></i>
+          </div>
+          <h4>&#x2709 contact us</h4>
+        </div>
+        <a href="#"><i class="fa fa-shopping-cart"></i></a>
+      </div>
+
+      <div class="pro">
+        <img src="IMAGES/products/Con Room.jpg" height="225" alt="Conference room">
+        <div class="Description">
+          <span>Conference Room</span>
+          <h5>Seting up Conference Room</h5>
+          <div class="star">
+            <i class="fa fa-star"></i>
+          </div>
+          <h4>&#x2709 contact us</h4>
+        </div>
+        <a href="#"><i class="fa fa-shopping-cart"></i></a>
+      </div>
+
+    </div>
+  </section>
+
+
+<section id="newsletter" class="section-p1 section-M1">
+  <div class="newstext">
+    <h4>Signup for Newsletters</h4>
+    <p>Get latest updates about supplies and services</p>
+  </div>
+  <div class="form">
+    <input type="text" placeholder="Your Email Address">
+    <button class="normal">Sign Up</button>
+  </div>
+</section>
+
+<footer class="section-p1">
+  <div class="col">
+    <img class="logo" src="IMAGES/xsed.jfif" height="100px" alt="TESCOM logo">
+    <h4>Contact</h4>
+    <p><strong>Address:</strong> Oba Akinjobi Way, Ikeja GRA, Ikeja 101233, Lagos.</p>
+    <p><strong>Phone:</strong> +2349040166898</p>
+    <p><strong>Hours:</strong> 9:00AM-4:00PM Mon - Fri</p>
+  </div>
+  
+  <div class="col">
+    <h4>About</h4>
+    <a href="#">About Us</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Contact Us</a>
+  </div>
+
+  <div class="col">
+    <h4>My Account</h4>
+    <a href="#">Sign In</a>
+    <a href="#">Track My Order</a>
+    <a href="#">Help</a>
+  </div>
+</footer>
+
+<script>
+    var MainIMG = document.getElementById("MainIMG");
+    var smallimg = document.getElementsByClassName("small-img");
+
+    smallimg[0].onclick = function(){
+        MainIMG.src = smallimg[0].src;
+    }
+    smallimg[1].onclick = function(){
+        MainIMG.src = smallimg[1].src;
+    }
+    smallimg[2].onclick = function(){
+        MainIMG.src = smallimg[2].src;
+    }
+    smallimg[3].onclick = function(){
+        MainIMG.src = smallimg[3].src;
+    }
+</script>
+
+  <script src="script.js"></script>
+</body>
+</html>
